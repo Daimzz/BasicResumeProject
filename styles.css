@@ -1,12 +1,164 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+*{
+	box-sizing: border-box;
+	/* padding: 0;
+	margin: 0; */
+}
+
+
 body{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 	color: rgb(15, 15, 15);
 }
+
+h2{
+	margin-bottom: 25px;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+a:hover{
+	background-color: rgba(36, 78, 90, 0.103);
+	text-decoration: underline;
+}
+
 .avatar{
 	width:200px;
 	border-radius: 12%;
 	box-shadow: 5px 5px 10px rgba(15,15,15,0.45);
+}
+.container {
+	max-width: 750px;
+	margin: auto;
+}
+
+
+
+.info{
+	margin-bottom: 25px;
+	display: flex;
+}
+.info p {
+	font-style: italic;
+	color: rgba(0, 0, 0, 0.685);
+}
+
+.info-img{
+	flex: 1 1 auto;
+}
+.info-other{
+	flex: 1 1 auto;
+	padding-left: 5%;
+}
+
+
+.bg-yellow{
+	background-color: #fff9dc;
+}
+.bg-green{
+	background-color: #e5ffe7;
+}
+.bg-red{
+	background-color: #ffe3e5;
+}
+
+.card{
+	padding: 10px 15px;
+
+	margin-bottom: 20px;
+	border-radius: 20px;
+}
+.card h2{
+	margin-bottom: 20px;
+}
+
+.list{
+	padding: 0 20px;
+	list-style: none;
+	
+	
+}
+.list li{
+	color: rgba(0, 0, 0, 0.699);
+	margin-bottom: 5px;
+	
+}
+
+.list li:last-child{
+	margin-bottom: 0;
+}
+
+.list li::before{
+	content: "> ";
+	
+}
+
+.table{
+	width: 100%;
+	
+}
+
+.table td{
+	padding-bottom: 8px;
+	padding-left: 20px;
+	color: rgba(0, 0, 0, 0.699);
+}
+.form-group{
+	margin-bottom: 15px;
+	font-size: 14px;
+	border-bottom: solid 1px #ccc;
+}
+.form-group label{
+	display: block;
+	margin-bottom: 9px;
+}
+
+.form-group input,
+.form-group textarea{
+	border: none;
+	
+	color: black;
+	
+	padding: 12px 0px 12px;
+	outline: none;
+	font-family: inherit;
+}
+
+.contacts h2{
+	text-align: center;
+}
+
+.input-row{
+	display: flex;
+	margin-bottom: 20px;
+}
+.input-row > .form-group{
+	width: 50%;
+	margin-right: 20px; 
+}
+.input-row > .form-group:last-child{
+	margin-right: 0px; 
+}
+.form-group-textarea textarea{
+	width: 100%;
+}
+.submit{
+	letter-spacing: 1px;
+	margin-top: 15px;
+	width: 150px;
+	border: none;
+	background-color: #464451;
+	border-radius: 8px;
+	padding: 10px 15px;
+	color: #fff;
+}
+.submit:hover{
+	background-color:#464451c4;
+}
+.submit:active{
+	box-shadow: 0px 0px 8px #464451c4;
 }
